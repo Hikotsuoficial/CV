@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Signika+Negative:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+}
+
+/* Lato  open sans **/
+
+subTitleTextDescription{
+    font-weight: 700;
+}
+
+.italicText{
+    font-style: italic;
+}
+
+body{
+    background-color: #2c2c2c;
+}
+
+.container{
+    width: 67.4%;
+    margin:40px auto;
+    box-shadow: 1px 1px 5px 1px rgba(31, 31, 31, 0.171);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #f1f9fd;  
+}
+
+/* PRIMER CONTENEDOR */
+
+.first__container--background{
+    background-color: #25333e;
+    width: 100%;
+}
+
+.first__container{
+    margin:120px auto ;
+    width: 67.4%;
+    word-break: break-all;
+}
+
+.sec1__titleFoto{
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 0;
+}
+
+.sec1__titleFoto .perfil__name{
+    font-size: 2.4rem;
+    font-weight:900;
+}
+
+.sec1__titleFoto img{
+    width: 210px;
+    border-radius: 50%;
+
+}
+
+.first__container .description__title{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 3px solid #f1f9fd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom:24px;
+}
+
+.first__container .descripciontext{
+    font-size: 1.2rem;
+    font-family: 'Signika Negative', sans-serif;
+    margin-bottom:10px;
+    line-height: 1.3;
+}
+
+.first__container .perfil__job{
+    font-family: 'Signika Negative', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2.2rem;
+}
+
+.first__container .sec1 .contact1{
+    display: flex;
+    flex: 2;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.first__container .sec1 .contact2{
+    display: flex;
+    flex: 2;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    justify-content: space-between;
+}
+
+.first__container .sec1 .contact1 img, .first__container .sec1 .contact2 img{
+    width: 20px;
+    padding: 0 4px;
+}
+
+.first__container .sec1, .second__container .sec1 {
+    margin: 20px  0;
+    padding: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+
+/* SEGUNDO CONTENEDOR */
+
+
+.second__container .description__title2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 3px solid #25333e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom:10px;
+}
+
+
+.second__container--background{
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+.second__container{
+    color: #131b20;
+    margin:120px auto ;
+    width: 70%;
+    word-break: break-all;
+}
+
+.second__container .descripciontext{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: 'Signika Negative', sans-serif;
+    margin-bottom:8px;
+    line-height: 1.3;
+}
+
+.second__container .perfil__job{
+    font-family: 'Signika Negative', sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.3rem;
+}
+
+.second__container .socialMedia{
+    list-style: none;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+
+.second__container .socialMedia li a{
+    text-decoration: none;
+    color: #131b20;
+}
+
+.second__container .orderForm{
+    margin: 60px 0;
+    list-style: none;
+}
+
+.second__container .orderForm .label{
+    font-family:  sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.second__container .contactInput{
+    width: 55%;
+    height: 44px;
+    padding: 0 10px;
+    border:1px solid #131b20;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    font-family:  sans-serif;
+}
+
+.second__container .textareaMsg{
+    width: 100%;
+    border:1px solid #131b20;
+    color: #131b20;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    padding: 10px 10px;
+    font-family:  sans-serif;
+}
+
+.second__container .orderForm button{
+    background-color: #25333e;
+    width: 120px;
+    color: #f1f9fd;
+    height: 44px;
+}
+
+@media screen and (min-width: 320px) {
+
+    .container{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .first__container{
+        width: 80%;
+        margin-top: 40px;
+    }
+
+    .sec1__titleFoto .perfil__name{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .sec1__titleFoto .perfil__job{
+        font-size: 1.5rem;
+    }
+
+    .sec1__titleFoto img{
+        width: 150px;
+    }
+    
+    .first__container .sec1 .contact1{
+        width: 100%;
+        font-size: 0.7rem;
+        justify-content: space-around;
+    }
+    
+    .first__container .sec1 .contact2{
+        width: 100%;
+        font-size: 0.7rem;
+        justify-content: space-around;
+    }
+
+    .first__container .sec1 .contact1 img, .first__container .sec1 .contact2 img{
+        width: 16px;
+        padding: 0 2px;
+    }
+
+    .first__container .descripciontext{
+        font-size: 1rem;
+    }
+
+    .second__container{
+        margin-top: 40px;
+        width: 80%;
+    }
+
+    .second__container .descripciontext{
+        font-size: 1rem;
+    }
+
+    
+    .second__container .contactInput{
+        width: 100%;
+    }
+
+    .second__container .orderForm li:last-child{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 375px) {
+
+    .container{
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .first__container .sec1 .contact1{
+        font-size: 0.9rem;
+    }
+    
+    .first__container .sec1 .contact2{
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (min-width: 425px) {
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .first__container .sec1 .contact1{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    
+    .first__container .sec1 .contact2{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .sec1__titleFoto img{
+        width: 200px;
+    }
+
+    .second__container, .first__container{
+        width: 67.4%;
+    }
+
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container{
+        width: 90%;
+        margin: 30px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .second__container, .first__container{
+        margin-top: 80px;
+    }
+
+    .sec1__titleFoto img{
+        width: 220px;
+    }
+
+    .first__container .sec1 .contact2, .first__container .sec1 .contact1{
+        justify-content: space-between;
+    }
+    
+}
+
+
+@media screen and (min-width: 1440px) {
+
+    .container{
+        width: 67.4%;
+        margin: 30px auto;
+    }
+
+    .second__container, .first__container{
+        margin-top: 80px;
+    }
+
+    .second__container .contactInput{
+        width: 60%;
+    }
+
+    .second__container .orderForm li:last-child{
+        text-align: left;
+    }
+
+    .first__container .descripciontext{
+        font-size: 1.2rem;
+    }
+
+    .second__container .descripciontext{
+        font-size: 1.2rem;
+    }
+
+    .first__container .sec1 .contact1{
+        width: 80%;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+    
+    .first__container .sec1 .contact2{
+        width: 80%;
+        font-size: 1rem;
+        justify-content: space-between;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
